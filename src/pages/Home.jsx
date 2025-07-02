@@ -53,7 +53,7 @@ return <div className="home">
     </form>
 
 
-    <div className="movies-gird">
+    <div className="movies-grid">
         {movies.map(movie =>
         movie.title.toLowerCase().startsWith(searchQuery.toLowerCase()) && (
         <MovieCard movie={movie} key={movie.id} />))}
